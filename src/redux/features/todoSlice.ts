@@ -2,7 +2,10 @@ import { PayloadAction, createSlice } from "@reduxjs/toolkit";
 const initialState = {
   todos: [],
 };
-type TTodo = {};
+type TTodo = {
+  title:string,
+  descrption:string
+};
 
 const todoSlice = createSlice({
   name: "todo",
